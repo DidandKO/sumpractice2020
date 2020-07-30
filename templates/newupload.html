@@ -1,0 +1,12 @@
+{% extends 'newindex.html' %}
+
+{% block content %}
+    <div class="uploader">
+        <h2>Загрузить</h2>
+        <form enctype="multipart/form-data" method="post">
+            {% csrf_token %}
+            <input type="file" name="document">
+            <button type="submit">Отправить и показать</button>
+        </form>
+    </div>
+{% endblock %}

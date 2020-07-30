@@ -1,0 +1,92 @@
+{% extends 'newindex.html' %}
+
+{% block content %}
+    <style>
+        .spoiler input, .spoiler div {
+            display:none;
+        }
+
+        .spoiler :checked ~ div {
+            display: block;
+        }
+    </style>
+    <p></p>
+     <h2>Results of unpcaping: {{ all_packets }} packets</h2>
+    <div class="spoiler">
+    <input type="checkbox" id="spoiler4">
+        <label for="spoiler4">Ethernet endpoints</label>
+      <div class="table-responsive">
+        <table class="table table-striped table-sm">
+          <tbody>
+                {% for mac in mac_addresses %}
+                    <tr>
+                    <td>{{ mac }}</td>
+                    </tr>
+                {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="spoiler">
+      <input type="checkbox" id="spoiler2">
+        <label for="spoiler2">IPv4 Endpoints</label>
+      <div class="table-responsive">
+        <table class="table table-striped table-sm">
+           <tbody>
+            {% for ip in ipv4_ip_pull %}
+                <tr>
+                    <td>{{ ip }}</td>
+                </tr>
+            {% endfor %}
+           </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="spoiler">
+      <input type="checkbox" id="spoiler1">
+        <label for="spoiler1">TCP Endpoints</label>
+      <div class="table-responsive">
+        <table class="table table-striped table-sm">
+           <tbody>
+            {% for ip in tcp_ip_pull %}
+                <tr>
+                    <td>{{ ip }}</td>
+                </tr>
+            {% endfor %}
+           </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="spoiler">
+    <input type="checkbox" id="spoiler3">
+        <label for="spoiler3">Per-packet Endpoints</label>
+      <div class="table-responsive">
+        <table class="table table-striped table-sm">
+          <tbody>
+                {% for conversation in conversations %}
+                    <tr>
+                    <td>{{ conversation }}</td>
+                    </tr>
+                {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="spoiler">
+    <input type="checkbox" id="spoiler5">
+        <label for="spoiler5">Conversations</label>
+      <div class="table-responsive">
+        <table class="table table-striped table-sm">
+          <tbody>
+                {% for conv in repeat_counter %}
+                    <tr>
+                    <td>{{ conv }}</td>
+                    </tr>
+                {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+{% endblock %}
