@@ -3,7 +3,8 @@ import pyshark
 from .models import ModelWithFileField
 import sumpractice.settings
 import os
-from PacketReader.pcap import read_pcap
+from media.PachetReader import pcap
+from media.PachetReader import packet
 
 
 def index(request):
@@ -129,7 +130,7 @@ def ipv4_destination_info(_packet):
 
 def mac_addresses(_upload_file):
     mcadr = []
-    packets = read_pcap(os.path.join(sumpractice.settings.MEDIA_ROOT, str(_upload_file)))
+    packets = pcap.read_pcap(os.path.join(sumpractice.settings.MEDIA_ROOT, str(_upload_file)))
     for packet in packets:
         _madrsrc = packet.mac_address(packet.ethernet_header['SRC'])
         if _madrsrc in mcadr:

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b1d2bf86-7d0e-4096-b922-9b882fb56a0e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b1d2bf86-7d0e-4096-b922-9b882fb56a0e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,11 +78,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ws_analyze/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2057">
-              <caret line="121" column="34" lean-forward="true" selection-start-line="121" selection-start-column="34" selection-end-line="121" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="51">
+              <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -293,7 +288,7 @@
       <workItem from="1601300007950" duration="747000" />
       <workItem from="1601390416376" duration="1956000" />
       <workItem from="1601394431523" duration="174000" />
-      <workItem from="1601475990586" duration="10114000" />
+      <workItem from="1601475990586" duration="10359000" />
     </task>
     <task id="LOCAL-00001" summary="gitignore">
       <created>1601483160272</created>
@@ -337,11 +332,18 @@
       <option name="project" value="LOCAL" />
       <updated>1601490570768</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="pcap fixed2">
+      <created>1601490941808</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1601490941808</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87615000" />
+    <option name="totallyTimeSpent" value="87860000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -354,7 +356,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="0" width="1471" height="1047" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30262226" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -418,7 +419,8 @@
     <MESSAGE value="settings and runtime" />
     <MESSAGE value="runtime runtime 3/7/3" />
     <MESSAGE value="pcap fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="pcap fixed" />
+    <MESSAGE value="pcap fixed2" />
+    <option name="LAST_COMMIT_MESSAGE" value="pcap fixed2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -589,11 +591,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ws_analyze/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2057">
-          <caret line="121" column="34" lean-forward="true" selection-start-line="121" selection-start-column="34" selection-end-line="121" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="51">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
         </state>
       </provider>
     </entry>
