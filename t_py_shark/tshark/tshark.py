@@ -27,7 +27,7 @@ def get_process_path(tshark_path=None, process_name="tshark"):
     :param tshark_path: Path of the tshark binary
     :raises TSharkNotFoundException in case TShark is not found in any location.
     """
-    pp = os.path.join(BASE_DIR, 't_py_shark/tshark.exe')
+    pp = os.path.join(BASE_DIR, 't_py_shark/Wireshark/tshark.exe')
     return pp
 
 
