@@ -1,5 +1,6 @@
 from django.shortcuts import render
-import pyshark
+# import pyshark
+import t_py_shark
 from .models import ModelWithFileField
 import sumpractice.settings
 import os
@@ -27,7 +28,7 @@ def upload(request):
             instance = ModelWithFileField(name=upload_file.name, file_field=request.FILES['document'])
             instance.save()
             print(upload_file.name)
-            capture = pyshark.FileCapture(os.path.join(sumpractice.settings.MEDIA_ROOT, str(upload_file)))
+            capture = t_py_shark.FileCapture(os.path.join(sumpractice.settings.MEDIA_ROOT, str(upload_file))) # !
             mac_dst_src_list = mac_addresses(os.path.join(sumpractice.settings.MEDIA_ROOT, str(upload_file)))
             for packet in capture:
                 results = network_conversation(packet)
