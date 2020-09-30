@@ -3,7 +3,6 @@ import pyshark
 from .models import ModelWithFileField
 import sumpractice.settings
 import os
-from PacketReader.packet import *
 from PacketReader.pcap import read_pcap
 
 
