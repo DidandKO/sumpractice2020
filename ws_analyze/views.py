@@ -3,8 +3,7 @@ import pyshark
 from .models import ModelWithFileField
 import sumpractice.settings
 import os
-from media.PachetReader import pcap
-from media.PachetReader import packet
+from media.PachetReader import *
 
 
 def index(request):
@@ -13,7 +12,6 @@ def index(request):
 
 def upload(request):
     global mac_dst_src_list
-    ModelWithFileField.objects.all().delete()
     conversations = []
     conv_pull = []
     conv_count = []
