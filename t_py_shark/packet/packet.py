@@ -2,8 +2,8 @@ import datetime
 import os
 import binascii
 
-from pyshark.packet import consts
-from pyshark.packet.common import Pickleable
+from t_py_shark.packet import consts
+from t_py_shark.packet.common import Pickleable
 
 
 class Packet(Pickleable):

@@ -2,8 +2,8 @@ import os
 
 import py
 
-from pyshark.packet.common import Pickleable
-from pyshark.packet.fields import LayerField, LayerFieldsContainer
+from t_py_shark.packet.common import Pickleable
+from t_py_shark.packet.fields import LayerField, LayerFieldsContainer
 
 
 class Layer(Pickleable):

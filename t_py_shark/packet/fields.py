@@ -1,6 +1,6 @@
 import binascii
 
-from pyshark.packet.common import Pickleable, SlotsPickleable
+from t_py_shark.packet.common import Pickleable, SlotsPickleable
 
 
 class LayerField(SlotsPickleable):

@@ -6,8 +6,8 @@ try:
 except ImportError:
     USE_UJSON = False
 
-from pyshark.packet.layer import JsonLayer
-from pyshark.packet.packet import Packet
+from t_py_shark.packet.layer import JsonLayer
+from t_py_shark.packet.packet import Packet
 
 
 def duplicate_object_hook(ordered_pairs):

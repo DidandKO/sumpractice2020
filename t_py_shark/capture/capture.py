@@ -7,10 +7,10 @@ import sys
 import logging
 from distutils.version import LooseVersion
 
-from pyshark.tshark.tshark import get_process_path, get_tshark_display_filter_flag, \
+from t_py_shark.tshark.tshark import get_process_path, get_tshark_display_filter_flag, \
     tshark_supports_json, TSharkVersionException, get_tshark_version, tshark_supports_duplicate_keys
-from pyshark.tshark.tshark_json import packet_from_json_packet
-from pyshark.tshark.tshark_xml import packet_from_xml_packet, psml_structure_from_xml
+from t_py_shark.tshark.tshark_json import packet_from_json_packet
+from t_py_shark.tshark.tshark_xml import packet_from_xml_packet, psml_structure_from_xml
 
 
 class TSharkCrashException(Exception):

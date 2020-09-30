@@ -1,9 +1,9 @@
 """This module contains functions to turn TShark XML parts into Packet objects."""
 import lxml.objectify
 
-from pyshark.packet.layer import Layer
-from pyshark.packet.packet import Packet
-from pyshark.packet.packet_summary import PacketSummary
+from t_py_shark.packet.layer import Layer
+from t_py_shark.packet.packet import Packet
+from t_py_shark.packet.packet_summary import PacketSummary
 
 
 def psml_structure_from_xml(psml_structure):
@@ -14,7 +14,7 @@ def psml_structure_from_xml(psml_structure):
 
 def packet_from_xml_packet(xml_pkt, psml_structure=None):
     """
-    Gets a TShark XML packet object or string, and returns a pyshark Packet objec.t
+    Gets a TShark XML packet object or string, and returns a t_py_shark Packet objec.t
 
     :param xml_pkt: str or xml object.
     :param psml_structure: a list of the fields in each packet summary in the psml data. If given, packets will

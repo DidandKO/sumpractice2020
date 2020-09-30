@@ -1,4 +1,4 @@
-from pyshark.capture.capture import Capture
+from t_py_shark.capture.capture import Capture
 import os
 
 class PipeCapture(Capture):

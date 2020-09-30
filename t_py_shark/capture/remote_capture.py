@@ -1,4 +1,4 @@
-from pyshark import LiveCapture
+from t_py_shark import LiveCapture
 
 
 class RemoteCapture(LiveCapture):

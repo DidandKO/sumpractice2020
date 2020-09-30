@@ -6,7 +6,7 @@ import sys
 import re
 from sumpractice.settings import BASE_DIR
 
-from pyshark.config import get_config
+from t_py_shark.config import get_config
 
 
 class TSharkNotFoundException(Exception):

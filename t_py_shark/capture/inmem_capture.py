@@ -6,7 +6,7 @@ import time
 import warnings
 from distutils.version import LooseVersion
 
-from pyshark.capture.capture import Capture, StopCapture
+from t_py_shark.capture.capture import Capture, StopCapture
 
 DEFAULT_TIMEOUT = 30
 

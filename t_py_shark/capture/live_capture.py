@@ -3,8 +3,8 @@ import asyncio
 import sys
 from distutils.version import LooseVersion
 
-from pyshark.capture.capture import Capture
-from pyshark.tshark.tshark import get_tshark_interfaces, get_process_path
+from t_py_shark.capture.capture import Capture
+from t_py_shark.tshark.tshark import get_tshark_interfaces, get_process_path
 
 
 class LiveCapture(Capture):
