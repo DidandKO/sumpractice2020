@@ -12,7 +12,7 @@ def index(request):
 
 
 def upload(request):
-    global mac_dst_src_list
+    mac_dst_src_list = 0
     conversations = []
     conv_pull = []
     conv_count = []
